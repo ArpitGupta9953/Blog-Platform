@@ -1,0 +1,205 @@
+
+.sidebar {
+  flex: 4; 
+  min-height: 100vh;
+  margin: 20px;
+  padding: 35px 25px 45px 25px;
+  background-color: #fdfbfb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sidebarItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px; 
+  width: 100%;
+  max-width: 350px; 
+}
+
+.sidebarTitle {
+  margin: 15px 0 25px 0;
+  padding: 10px 15px; 
+  width: 90%; 
+  border-top: solid 2px #a7a4a4;
+  border-bottom: solid 2px #a7a4a4;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px; 
+  line-height: 24px;
+  color: #222222;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.sidebarImg {
+  margin-top: 25px;
+  width: 320px; 
+  height: 320px; 
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.sidebarImg:hover {
+  transform: scale(1.05);
+}
+
+.sidebarDesc {
+  padding: 40px 30px; 
+  color: #444;
+  line-height: 26px;
+  text-align: center;
+  font-size: 16px; 
+  font-family: "Varela Round", sans-serif;
+}
+
+.sidebarList {
+  list-style-type: none;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px; 
+}
+
+.sidebarListItem {
+  text-align: center;
+  cursor: pointer;
+  background-color: #f8f6f6;
+  padding: 15px 12px; 
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.sidebarListItem:hover {
+  background-color: #be9656;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.popularPosts {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.popularPost {
+  display: flex;
+  flex-direction: column;
+  padding: 18px; 
+  margin-bottom: 18px;
+  background-color: #f8f6f6;
+  border-radius: 10px;
+  border-left: 5px solid #be9656; 
+  transition: transform 0.2s ease;
+}
+
+.popularPost:hover {
+  transform: translateX(8px);
+}
+
+.popularPostTitle {
+  font-size: 15px; 
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.popularPostDate {
+  font-size: 13px; 
+  color: #999;
+  font-style: italic;
+}
+
+.sidebarSocial {
+  margin-top: 25px;
+  width: 320px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.sidebarIcon {
+  font-size: 28px; 
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #f8f6f6;
+}
+
+.sidebarIcon:hover {
+  color: #be9656;
+  background-color: #ebe9e9;
+  transform: scale(1.15);
+}
+
+.socialStats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #f8f6f6;
+  border-radius: 12px;
+}
+
+.socialStat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-size: 22px; 
+  font-weight: bold;
+  color: #be9656;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  font-size: 13px; 
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex: 1;
+    margin: 10px 0;
+    min-height: auto;
+    padding: 25px 20px;
+  }
+  
+  .sidebarImg {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .sidebarList {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebarSocial {
+    width: 100%;
+  }
+}
