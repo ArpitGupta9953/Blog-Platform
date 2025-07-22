@@ -33,10 +33,6 @@ A modern and responsive Blog Platform built using **React**, allowing users to e
 ### 🏠 Homepage
 <img width="1893" height="855" alt="image" src="https://github.com/user-attachments/assets/88c2bbe7-e732-4192-a623-d65d9d31c20f" />
 
-
-### 📄 Blog Detail Page
-*(Add screenshot URL after uploading image in GitHub issues or uploading image directly to repo)*
-
 ---
 
 ## 🧑‍💻 Installation & Setup
